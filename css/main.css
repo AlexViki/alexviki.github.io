@@ -1,0 +1,15 @@
+
+#introduction {
+	 background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.8)),
+              url("/images/bg.jpg") 0% 0%/cover
+}
+
+/* introduction должен занимать все пространство экрана */
+.fill-viewport {
+	min-height: 50vh;
+}
+
+/* более тусклый оттенок */
+.text-white-70 {
+	color: rgba(255,255,255,0.7);
+}
