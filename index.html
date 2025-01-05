@@ -1,34 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet"
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-		crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Святкове привітання</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1e1e2e;
+            font-family: 'Comic Sans MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
 
-	<title>AlexViki</title>
+        .container {
+            text-align: center;
+            color: #fff;
+        }
+        li {
+            text-align: left;
+            color: #f53f3f;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); color: #f39c12; }
+            50% { transform: scale(1.1); color: #e74c3c; }
+            100% { transform: scale(1); color: #3498db; }
+        }
+
+        .star {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: yellow;
+            animation: sparkle 2s infinite ease-in-out;
+            border-radius: 50%;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.5; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .star:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .star:nth-child(2) {
+            top: 30%;
+            left: 50%;
+            animation-delay: 1s;
+        }
+
+        .star:nth-child(3) {
+            top: 70%;
+            left: 80%;
+            animation-delay: 1.5s;
+        }
+
+        .balloon {
+            position: absolute;
+            bottom: -150px;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle at bottom, #ff9bd3, #ff6f91);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(-150vh); }
+        }
+
+        .balloon:nth-child(4) {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(5) {
+            left: 40%;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(6) {
+            left: 60%;
+            animation-delay: 4s;
+        }
+
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            animation: fly 2s ease-in-out infinite, explode 0.5s ease-in-out infinite;
+        }
+
+        @keyframes fly {
+            0% {
+                top: 100%;
+                left: calc(50% + var(--offset, 0px));
+            }
+            50% {
+                top: 20%;
+                left: calc(50% + var(--offset, 0px));
+            }
+            100% {
+                top: 20%;
+                left: calc(50% + var(--offset, 0px));
+            }
+        }
+
+        @keyframes explode {
+            50% {
+                box-shadow: 0 0 15px 10px red, 0 0 30px 20px yellow, 0 0 50px 30px blue;
+            }
+        }
+    </style>
 </head>
 <body>
-	<div class="container">
-		<section id="introduction">
-			<div class="container">
-				<div class="row fill-viewport align-items-center">
-					<div class="col-12 col-md-6">
-						<h1 class="text-white">Alex Viki</h1>
-						<p class="lead text-white-70">If you can dream it you can do it!</p>
-						<a class="btn btn-primary" href="#" role="button">Download CV</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="info--1"></section>
-		<section id="info--2"></section>
-		<section id="skills"></section>
-		<section id="contact"></section>
-		<section id="footer"></section>
-	</div>
+    <div class="container">
+        <h1>З Днем народження!</h1>
+        <p>Зроби цей день незабутнім! 🎉</p>
+        <p>нехай твоє життя завжди буде з красивою палітрою кольорів, і жодного <b>404 Not Found</b> на шляху до мрій.<br>
+        <br>
+        <ul>
+            <li><b>Бажаю тобі:</b></li>
+            <li>border-radius: 100% щастя</li>
+            <li>box-shadow натхнення</li>
+            <li>font-weight: bold удачі</li>
+            <li>transition: all 0.5s ease-in-out досягнень у кожній справі</li>
+        </ul>
+        <br>
+        <p>Пам'ятай, що головний script твого життя — це твої мрії, а найкращий framework — це підтримка рідних та друзів.</p>
+    </div>
+    <!-- Зірки -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <!-- Кульки -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <!-- Феєрверки -->
+    <div class="firework" style="--offset: -100px; animation-delay: 0s;"></div>
+    <div class="firework" style="--offset: 50px; animation-delay: 0.5s;"></div>
+    <div class="firework" style="--offset: -50px; animation-delay: 1s;"></div>
 </body>
 </html>
