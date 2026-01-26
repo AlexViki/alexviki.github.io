@@ -1,4 +1,4 @@
-# Alex Viki - DevOps Engineer & Infrastructure Architect
+# Oleksandr - DevOps Engineer
 
 DevOps Engineer with over 17 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly.
 
@@ -43,7 +43,7 @@ Kafka
 ### ONSEO — DevOps Engineer
 **07/2020 – Present**
 
-- Design, implementation, and maintenance of production-grade infrastructure
+- Implementation, and maintenance of production-grade infrastructure
 - Administration and scaling of Kubernetes clusters and containerized workloads
 - CI/CD pipeline design and support using Jenkins, Flux, Helm, and Kustomize
 - Infrastructure provisioning and management using Terraform and Ansible
