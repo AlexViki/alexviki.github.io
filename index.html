@@ -1,168 +1,435 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Святкове привітання</title>
+    <title>Oleksansr Shevcneko - DevOps Engineer</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            margin: 0;
-            background: #1e1e2e;
-            font-family: 'Comic Sans MS', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #fafafa;
+            color: #333;
+            line-height: 1.6;
         }
-
+        
         .container {
-            text-align: center;
-            color: #fff;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-        li {
-            text-align: left;
-            color: #f53f3f;
+        
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 30px;
         }
-
+        
         h1 {
-            font-size: 4rem;
-            margin: 0;
-            animation: pulse 2s infinite;
+            font-size: 32px;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #222;
         }
-
-        p {
-            font-size: 1.5rem;
-            margin: 10px 0;
+        
+        .title {
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 16px;
+            font-weight: 600;
         }
-
-        @keyframes pulse {
-            0% { transform: scale(1); color: #f39c12; }
-            50% { transform: scale(1.1); color: #e74c3c; }
-            100% { transform: scale(1); color: #3498db; }
+        
+        .bio {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+            max-width: 800px;
         }
-
-        .star {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: yellow;
-            animation: sparkle 2s infinite ease-in-out;
-            border-radius: 50%;
+        
+        section {
+            margin-bottom: 50px;
         }
-
-        @keyframes sparkle {
-            0%, 100% { opacity: 0.5; transform: scale(0.8); }
-            50% { opacity: 1; transform: scale(1.2); }
+        
+        h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #222;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
         }
-
-        .star:nth-child(1) {
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
+        
+        h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 4px;
         }
-
-        .star:nth-child(2) {
-            top: 30%;
-            left: 50%;
-            animation-delay: 1s;
+        
+        .experience-item {
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
         }
-
-        .star:nth-child(3) {
-            top: 70%;
-            left: 80%;
-            animation-delay: 1.5s;
+        
+        .experience-item:last-child {
+            border-bottom: none;
         }
-
-        .balloon {
-            position: absolute;
-            bottom: -150px;
-            width: 60px;
-            height: 80px;
-            background: radial-gradient(circle at bottom, #ff9bd3, #ff6f91);
-            border-radius: 50%;
-            animation: float 6s infinite ease-in-out;
+        
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
         }
-
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(-150vh); }
+        
+        .company-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #222;
         }
-
-        .balloon:nth-child(4) {
-            left: 20%;
-            animation-delay: 0s;
+        
+        .position {
+            font-size: 14px;
+            color: #0066cc;
+            font-weight: 500;
         }
-
-        .balloon:nth-child(5) {
-            left: 40%;
-            animation-delay: 2s;
+        
+        .dates {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
         }
-
-        .balloon:nth-child(6) {
-            left: 60%;
-            animation-delay: 4s;
+        
+        .description {
+            font-size: 13px;
+            color: #555;
+            margin-top: 8px;
         }
-
-        .firework {
-            position: absolute;
-            width: 5px;
-            height: 5px;
+        
+        .description ul {
+            margin-left: 16px;
+            margin-top: 6px;
+        }
+        
+        .description li {
+            margin-bottom: 4px;
+            line-height: 1.6;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
             background: white;
-            border-radius: 50%;
-            animation: fly 2s ease-in-out infinite, explode 0.5s ease-in-out infinite;
+            padding: 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
         }
-
-        @keyframes fly {
-            0% {
-                top: 100%;
-                left: calc(50% + var(--offset, 0px));
-            }
-            50% {
-                top: 20%;
-                left: calc(50% + var(--offset, 0px));
-            }
-            100% {
-                top: 20%;
-                left: calc(50% + var(--offset, 0px));
-            }
+        
+        .skill-category strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #222;
+            font-size: 14px;
         }
-
-        @keyframes explode {
-            50% {
-                box-shadow: 0 0 15px 10px red, 0 0 30px 20px yellow, 0 0 50px 30px blue;
+        
+        .skill-icon {
+            display: inline-block;
+            font-size: 20px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        .skill-category p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+        
+        .cert-item {
+            padding: 12px;
+            background: white;
+            border-left: 3px solid #0066cc;
+            font-size: 13px;
+            border-radius: 2px;
+        }
+        
+        .cert-name {
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 2px;
+        }
+        
+        .cert-provider {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0066cc;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-top: 4px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+            flex-wrap: wrap;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            border-top: 2px solid #e0e0e0;
+            padding-top: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            
+            .title {
+                font-size: 16px;
+            }
+            
+            .company-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .stats {
+                gap: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Рома, з Днем народження!</h1>
-        <p>Зроби цей день незабутнім! 🎉</p>
-        <p>нехай твоє життя завжди буде з красивою палітрою кольорів, і жодного <b>404 Not Found</b> на шляху до мрій.<br>
-        <br>
-        <ul>
-            <li><b>Бажаю тобі:</b></li>
-            <li>border-radius: 100% щастя</li>
-            <li>box-shadow натхнення</li>
-            <li>font-weight: bold удачі</li>
-            <li>transition: all 0.5s ease-in-out досягнень у кожній справі</li>
-        </ul>
-        <br>
-        <p>Пам'ятай, що головний script твого життя — це твої мрії, а найкращий framework — це підтримка рідних та друзів.</p>
+        <header>
+            <h1>Oleksansr Shevcneko</h1>
+            <p class="title">DevOps Engineer</p>
+            <p class="bio">
+                DevOps Engineer with over 17 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly.
+            </p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-value">17+</span>
+                    <span class="stat-label">Years IT</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">5+</span>
+                    <span class="stat-label">DevOps</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">5</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <div class="company-header">
+                    <span class="company-name">ONSEO</span>
+                    <span class="dates">07/2020 – Present</span>
+                </div>
+                <p class="position">DevOps Engineer</p>
+                <div class="description">
+                    <ul>
+                        <li>Implementation, and maintenance of production-grade infrastructure</li>
+                        <li>Administration and scaling of Kubernetes clusters and containerized workloads</li>
+                        <li>CI/CD pipeline design and support using Jenkins, Flux, Helm, and Kustomize</li>
+                        <li>Infrastructure provisioning and management using Terraform and Ansible</li>
+                        <li>Implementation of monitoring, logging, and observability solutions</li>
+                        <li>Collaboration with development and QA teams, including technical workshops and knowledge sharing</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="company-header">
+                    <span class="company-name">Ciklum</span>
+                    <span class="dates">06/2016 – 06/2020</span>
+                </div>
+                <p class="position">IT Support Engineer</p>
+                <div class="description">
+                    <ul>
+                        <li>Technical support and troubleshooting for enterprise environments</li>
+                        <li>Participation in technical onboarding of new employees</li>
+                        <li>Contribution to development and improvement of internal training programs and documentation</li>
+                        <li>Close collaboration with engineering teams to resolve infrastructure and application issues</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="company-header">
+                    <span class="company-name">WOG</span>
+                    <span class="dates">10/2014 – 06/2016</span>
+                </div>
+                <p class="position">Head of Regional Technical Support</p>
+                <div class="description">
+                    <ul>
+                        <li>Management of regional technical support teams</li>
+                        <li>Organization and delivery of technical trainings for operators and support staff</li>
+                        <li>Oversight of IT systems operation and incident resolution processes</li>
+                        <li>Coordination between business units and technical teams</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="company-header">
+                    <span class="company-name">WOG</span>
+                    <span class="dates">05/2009 – 09/2014</span>
+                </div>
+                <p class="position">System Administrator</p>
+                <div class="description">
+                    <ul>
+                        <li>Support of network services, servers, and user environments</li>
+                        <li>Automation of routine administrative tasks using scripting</li>
+                        <li>Participation in infrastructure upgrades and system migrations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong><span class="skill-icon">🐧</span>Operating Systems & Shell</strong>
+                    <p>Linux, Bash scripting</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">🐳</span>Containers & Orchestration</strong>
+                    <p>Docker, Kubernetes, Helm, Kustomize</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">🔄</span>CI/CD & GitOps</strong>
+                    <p>Jenkins, Flux, GitHub Actions</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">🏗️</span>Infrastructure as Code</strong>
+                    <p>Terraform, Ansible</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">☁️</span>Cloud Platforms</strong>
+                    <p>Google Cloud Platform (GCP), Azure</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">📊</span>Observability Stack</strong>
+                    <p>Prometheus, Grafana, ELK, Loki, Vecto, monitoring & alerting</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">🗄️</span>Databases</strong>
+                    <p>PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-category">
+                    <strong><span class="skill-icon">📤</span>Messaging & Streaming</strong>
+                    <p>Kafka</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <div class="cert-item">
+                    <div class="cert-name">CCNA Routing & Switching</div>
+                    <div class="cert-provider">Cisco Networking Academy</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">CCNA Security</div>
+                    <div class="cert-provider">Cisco Networking Academy</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">CCNA Cybersecurity Operations</div>
+                    <div class="cert-provider">Cisco Networking Academy</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Linux Professional Development</div>
+                    <div class="cert-provider">Cisco Networking Academy</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Jenkins Fundamentals</div>
+                    <div class="cert-provider">Linux Academy</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Terraform Basics & Advanced</div>
+                    <div class="cert-provider">Udemy</div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Connect</h2>
+            <div class="links">
+                <a href="https://github.com/AlexViki">GitHub</a>
+                <a href="https://linkedin.com/in/olexandr-shevchenko">LinkedIn</a>
+                <!-- <a href="https://medium.com/@alexviki">Medium</a> -->
+                <!-- <a href="mailto:alex@example.com">Email</a> -->
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2026 Oleksansr Shevcneko. DevOps Engineer.</p>
+        </footer>
     </div>
-    <!-- Зірки -->
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <!-- Кульки -->
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-    <div class="balloon"></div>
-    <!-- Феєрверки -->
-    <div class="firework" style="--offset: -100px; animation-delay: 0s;"></div>
-    <div class="firework" style="--offset: 50px; animation-delay: 0.5s;"></div>
-    <div class="firework" style="--offset: -50px; animation-delay: 1s;"></div>
 </body>
 </html>
