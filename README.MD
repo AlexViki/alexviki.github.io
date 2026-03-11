@@ -1,10 +1,10 @@
 # Oleksandr - DevOps Engineer
 
-DevOps Engineer with over 17 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly.
+DevOps Engineer with over 15 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly.
 
 ## 📊 At a Glance
 
-- **17+** Years of IT Experience
+- **15+** Years of IT Experience
 - **5+** Years of DevOps
 - **5** Professional Certifications
 
