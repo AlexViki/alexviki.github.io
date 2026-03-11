@@ -9,7 +9,7 @@ DevOps Engineer with over 15 years of experience in IT and several years of hand
 ---
 ## Public experience
 [Fwdays'26 DesOps](https://fwdays.com/event/devops-fwdays-2026)
-Topic: From Logging Chaos to Controlled Pipelines
+From Logging Chaos to Controlled Pipelines
 
 ## 🛠️ Technical Skills
 
