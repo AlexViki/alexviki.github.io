@@ -107,4 +107,4 @@ This repository contains my professional portfolio. For the interactive version,
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** March 2026
