@@ -1,15 +1,15 @@
 # Oleksandr - DevOps Engineer
 
-DevOps Engineer with over 15 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly. 
+[GitHub](https://github.com/AlexViki) | [LinkedIn](https://linkedin.com/in/olexandr-shevchenko)
+
+DevOps Engineer with over 15 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly. Speaker at [Fwdays'26 DevOps conference](https://fwdays.com/event/devops-fwdays-2026).
 
 ## 📊 At a Glance
 
 - **15+** Years of IT Experience
 - **5+** Years of DevOps
+
 ---
-## Public experience
-[Fwdays'26 DesOps](https://fwdays.com/event/devops-fwdays-2026)
-From Logging Chaos to Controlled Pipelines
 
 ## 🛠️ Technical Skills
 
@@ -29,7 +29,7 @@ Terraform, Ansible
 Google Cloud Platform (GCP), Azure
 
 ### 📊 Observability Stack
-Prometheus, Grafana, ELK, Loki, monitoring & alerting
+Prometheus, Grafana, ELK, Loki, Vecto, monitoring & alerting
 
 ### 🗄️ Databases
 PostgreSQL, MongoDB
@@ -39,12 +39,30 @@ Kafka
 
 ---
 
+## 🎤 Public experience
+
+- **[From logging chaos to controlled pipelines](https://fwdays.com/event/devops-fwdays-2026)** — Fwdays'26 DevOps
+
+---
+
+## 🎟️ Participant of conferences
+
+- **[Fwdays'26 DevOps](./files/certificate-fwdays-devops-2026.pdf)** (2026)
+- **[Kyiv AI Day](./files/kyiv-ai-day-main-2025.pdf)** (2025)
+- **[Fwdays'25 Architecture](./files/certificate-fwdays-architecture-2025.pdf)** (2025)
+- **[Fwdays'25 DevRain AI](./files/certificate-fwdays-devrain-ai-2025.pdf)** (2025)
+- **[Fwdays'25 Highload](./files/certificate-fwdays-highload-2025.pdf)** (2025)
+- **[Biggest technical conference Dou Day'25](./files/dou-day-2025.pdf)** (2025)
+- **[Fwdays'23 DevOps](./files/certificate-fwdays-devops-2023.pdf)** (2023)
+
+---
+
 ## 💼 Professional Experience
 
 ### ONSEO — DevOps Engineer
 **07/2020 – Present**
 
-- Implementation, and maintenance of production-grade infrastructure
+- Implementation and maintenance of production-grade infrastructure
 - Administration and scaling of Kubernetes clusters and containerized workloads
 - CI/CD pipeline design and support using Jenkins, Flux, Helm, and Kustomize
 - Infrastructure provisioning and management using Terraform and Ansible
@@ -93,19 +111,10 @@ Kafka
 
 ---
 
-## 🔗 Connect
-
-- [GitHub](https://github.com/AlexViki)
-- [LinkedIn](https://linkedin.com/in/alexviki)
-<!-- - [Medium](https://medium.com/@alexviki)
-- [Email](mailto:alex@example.com) -->
-
----
-
 ## 🌐 Portfolio
 
 This repository contains my professional portfolio. For the interactive version, visit: **[alexviki.github.io](https://alexviki.github.io)**
 
 ---
 
-**Last Updated:** March 2026
+**Last Updated:** April 2026
