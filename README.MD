@@ -37,6 +37,12 @@ PostgreSQL, MongoDB
 ### 📤 Messaging & Streaming
 Kafka
 
+### 🛡️ Security stack
+Vault, GCP KMS
+
+### 👨‍💻 Language
+Groovy, JavaScript, Python
+
 ---
 
 ## 🎤 Public experience
