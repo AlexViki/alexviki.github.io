@@ -47,7 +47,9 @@ Kafka
 
 ## 🎟️ Participant of conferences
 
-- **[Fwdays'26 DevOps](./files/certificate-fwdays-devops-2026.pdf)** (2026)
+- **[Fwdays'26 Highload](./files/certificate-fwdays-highload-2026.pdf)** (2026, will be in June)
+- **[Biggest technical conference Dou Day'26](./files/dou-day-2026.pdf)**
+- **[Fwdays'26 DevOps](./files/certificate-fwdays-devops-2026.pdf)**
 - **[Kyiv AI Day](./files/kyiv-ai-day-main-2025.pdf)** (2025)
 - **[Fwdays'25 Architecture](./files/certificate-fwdays-architecture-2025.pdf)** (2025)
 - **[Fwdays'25 DevRain AI](./files/certificate-fwdays-devrain-ai-2025.pdf)** (2025)
