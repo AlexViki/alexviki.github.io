@@ -3,11 +3,12 @@
 [GitHub](https://github.com/AlexViki) | [LinkedIn](https://linkedin.com/in/olexandr-shevchenko)
 
 DevOps Engineer with over 15 years of experience in IT and several years of hands-on work with production infrastructure. Strong background in cloud platforms, container orchestration, CI/CD pipelines, and infrastructure as code. Experienced in technical training, workshops, and knowledge sharing with the ability to explain complex concepts clearly. Speaker at [Fwdays'26 DevOps conference](https://fwdays.com/event/devops-fwdays-2026).
+Additionally, works as a Part-time Assistant Lecturer at VNTU, teaching hands-on Computer Networks courses and bridging real-world engineering practices with academic education.
 
 ## 📊 At a Glance
 
 - **15+** Years of IT Experience
-- **5+** Years of DevOps
+- **6+** Years of DevOps
 
 ---
 
@@ -53,7 +54,7 @@ Groovy, JavaScript, Python
 
 ## 🎟️ Participant of conferences
 
-- **[Fwdays'26 Highload](./files/certificate-fwdays-highload-2026.pdf)** (2026, will be in June)
+- **[Fwdays'26 Highload](./files/certificate-fwdays-highload-2026.pdf)** (2026)
 - **[Biggest technical conference Dou Day'26](./files/dou-day-2026.pdf)**
 - **[Fwdays'26 DevOps](./files/certificate-fwdays-devops-2026.pdf)**
 - **[Kyiv AI Day](./files/kyiv-ai-day-main-2025.pdf)** (2025)
@@ -66,6 +67,17 @@ Groovy, JavaScript, Python
 ---
 
 ## 💼 Professional Experience
+
+### Vinnytsia National Technical University — Assistant Lecturer
+**09/2026 – Present**
+
+- Conduct practical and laboratory classes in Computer Networks and Corporate & Public Networks for undergraduate
+    students.
+- Facilitate hands-on training in network architecture, IPv4/IPv6 addressing, static/dynamic routing, network
+    security, and enterprise design using Cisco IOS and network simulators.
+- Bridge industry DevOps and networking practices with the academic curriculum to prepare students for real-world
+    engineering challenges.
+- Mentor students in practical assignments, troubleshooting complex network topologies, and project-based learning.
 
 ### ONSEO — DevOps Engineer
 **07/2020 – Present**
